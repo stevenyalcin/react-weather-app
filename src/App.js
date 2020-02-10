@@ -6,10 +6,10 @@ function App() {
   return (
     <div className="App">
       <WeatherCard
-        city={'Sydney'}
-        country={'AU'}
-        temp={10}
-        condition={'Clear'}
+        city={'Halifax'}
+        country={'CA'}
+        temp={-10}
+        condition={'Snowing'}
       />
     </div>
   );
