@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Location from '../Location/Location';
+import Icon from '../Icon/Icon';
+import Condition from '../Condition/Condition';
 
 const WeatherCard = props => {
   const cloud = 100;
@@ -21,13 +23,8 @@ const WeatherCard = props => {
   return (
     <Card>
       <Location />
-      <img
-        className="icon"
-        src="https://img.icons8.com/color/96/000000/cloud.png"
-        alt="Weather icon"
-      />
-      <h1 className="temperature">23 ℃</h1>
-      <h3 className="condition">Cloudy</h3>
+      <Icon />
+      <Condition />
     </Card>
   );
 };

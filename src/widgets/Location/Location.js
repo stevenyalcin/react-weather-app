@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Location = props => {
-  const Location = styled.div`
+  const LocationName = styled.div`
     text-align: center;
   `;
   const City = styled.h1`
@@ -13,10 +13,10 @@ const Location = props => {
   `;
 
   return (
-    <Location>
+    <LocationName>
       <City>Sydney</City>
       <Country>AU</Country>
-    </Location>
+    </LocationName>
   );
 };
 
