@@ -4,13 +4,18 @@ import Location from '../Location/Location';
 import Icon from '../Icon/Icon';
 import Condition from '../Condition/Condition';
 
-const WeatherCard = props => {
-  const cloud = 100;
+const WeatherCard = ({ temp }) => {
+  let highColor = (1 - (temp - 12) / 28) * 255;
+  let lowColor = highColor - 150;
 
   const Card = styled.div`
     font-family: 'Merriweather', sans-serif;
     margin: 0 auto;
-    background: linear-gradient(to bottom, rgb(${cloud}, 200, 200), lightblue);
+    background: linear-gradient(
+      to top,
+      rgb(255, ${highColor}, 0),
+      rgb(255, ${lowColor}, 0)
+    );
     width: 15em;
     height: 20em;
     display: flex;
