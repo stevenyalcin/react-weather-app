@@ -43,8 +43,8 @@ const WeatherCard = ({
 
   return (
     <Card>
-      <Location cityTimezone={cityTimezone} conditionIcon={conditionIcon} />
-      <Icon icone={conditionIcon} />
+      <Location cityTimezone={cityTimezone} />
+      <Icon conditionIcon={conditionIcon} />
       <Condition
         temperature={temperature}
         conditionSummary={conditionSummary}

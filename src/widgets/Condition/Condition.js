@@ -12,7 +12,7 @@ const Condition = ({ temperature, conditionSummary }) => {
 
   return (
     <>
-      <Temperature>{temperature} ℃</Temperature>
+      <Temperature>{temperature} °F</Temperature>
       <State>{conditionSummary}</State>
     </>
   );
