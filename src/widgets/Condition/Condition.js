@@ -7,7 +7,7 @@ const Condition = ({ temperature, conditionSummary }) => {
   `;
 
   const State = styled.h3`
-    font-size: 1.7rem;
+    font-size: 1.1rem;
   `;
 
   return (
