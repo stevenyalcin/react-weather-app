@@ -1,20 +1,21 @@
-import React from 'react';
 import styled from '@emotion/styled';
-
-import Cloudy from './icons/Party Cloudy Night-2x.png';
-import CloudyDay from './icons/Party Cloudy Night-2x.png';
-import CloudyNight from './icons/Party Cloudy Night-2x.png';
-import ClearDay from './icons/Party Cloudy Night-2x.png';
-import ClearNight from './icons/Party Cloudy Night-2x.png';
-import Fog from './icons/Party Cloudy Night-2x.png';
-import Hail from './icons/Party Cloudy Night-2x.png';
-import Sleet from './icons/Party Cloudy Night-2x.png';
-import Rain from './icons/Party Cloudy Night-2x.png';
-import Snow from './icons/Party Cloudy Night-2x.png';
-import Tornado from './icons/Party Cloudy Night-2x.png';
-import Thunderstorm from './icons/Party Cloudy Night-2x.png';
-import Wind from './icons/Party Cloudy Night-2x.png';
-import Haze from './icons/Party Cloudy Night-2x.png';
+import React from 'react';
+import {
+  default as ClearDay,
+  default as ClearNight,
+  default as Cloudy,
+  default as CloudyDay,
+  default as CloudyNight,
+  default as Fog,
+  default as Hail,
+  default as Haze,
+  default as Rain,
+  default as Sleet,
+  default as Snow,
+  default as Thunderstorm,
+  default as Tornado,
+  default as Wind
+} from './icons/Party Cloudy Night-2x.png';
 
 const Icon = ({ conditionIcon }) => {
   const Image = styled.img`
