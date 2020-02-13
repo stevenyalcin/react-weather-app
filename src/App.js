@@ -44,10 +44,10 @@ function App() {
               return (
                 <div key={index}>
                   <WeatherCard
-                    city={data.timezone}
-                    icon={data.currently.icon}
-                    temp={data.currently.temperature}
-                    condition={data.currently.summary}
+                    cityTimezone={data.timezone}
+                    conditionIcon={data.currently.icon}
+                    temperature={data.currently.temperature}
+                    conditionSummary={data.currently.summary}
                   />
                 </div>
               );

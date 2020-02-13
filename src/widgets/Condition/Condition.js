@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const Condition = ({ temp, condition }) => {
+const Condition = ({ temperature, conditionSummary }) => {
   const Temperature = styled.h1`
     font-size: 1.7rem;
   `;
@@ -12,8 +12,8 @@ const Condition = ({ temp, condition }) => {
 
   return (
     <>
-      <Temperature>{temp} ℃</Temperature>
-      <State>{condition}</State>
+      <Temperature>{temperature} ℃</Temperature>
+      <State>{conditionSummary}</State>
     </>
   );
 };

@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const Icon = ({ icone }) => {
+const Icon = ({ conditionIcon }) => {
   const Image = styled.img`
     width: 30%;
   `;
 
-  // The switch statement
-  var iconImg = '';
-  switch (icone) {
+  // set the switch statement according to the current condition icon
+  var conditionIconImg = '';
+  switch (conditionIcon) {
     case 'partly-cloudy-night':
-      iconImg = './Tornado-2x.png';
+      conditionIconImg = './icons/Heavy Rain-2x.png';
       break;
     default:
       break;
   }
 
-  return <Image src={iconImg} alt="Weather icon" />;
+  return <Image src={conditionIconImg} alt="Weather icon" />;
 };
 
 export default Icon;
