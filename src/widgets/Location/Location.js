@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Location = ({ cityTimezone, conditionIcon }) => {
+  // set styled library for the components by wrapping them by using div
   const LocationName = styled.div`
     text-align: center;
   `;

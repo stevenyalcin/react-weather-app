@@ -10,10 +10,12 @@ const WeatherCard = ({
   temperature,
   conditionSummary
 }) => {
+  // set mutable variables for the up and down color for the temperature
   let highColor = 0;
   let lowColor = 0;
   let bg = null;
 
+  // set the calculation based on the current temperature that we are receiving for particular location
   if (temperature > 12) {
     highColor = (1 - (temperature - 12) / 28) * 255;
     lowColor = highColor - 150;
@@ -28,6 +30,7 @@ const WeatherCard = ({
       rgb(0, ${lowColor}, 255))`;
   }
 
+  // set hoc styled library for the card component that includes all inner components
   const Card = styled.div`
     font-family: 'Merriweather', sans-serif;
     margin: 0 auto;
