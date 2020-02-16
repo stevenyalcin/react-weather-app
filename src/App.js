@@ -7,6 +7,7 @@ function App() {
   const [error, setError] = useState(true);
   // const [showLoading, setShowLoading] = useState(false);
 
+  // set URL for the halifax NS area
   const halifaxURL =
     'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/ca936c348869cb4351c290fc43c349b5/44.647674,-63.608413';
 
