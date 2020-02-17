@@ -51,16 +51,20 @@ const WeatherEngine = ({ location }) => {
 
   return (
     <div>
-      <WeatherCard
-        cityTimezone={weather.city}
-        country={weather.country}
-        temperature={weather.temp}
-        conditionSummary={weather.condition}
-      />
-      <form>
-        <input value={query} onChange={e => setQuery(e.target.value)} />
-        <button onClick={e => handleSearch(e)}>Search</button>
-      </form>
+      {error && (
+        <div className="weatherCard">
+          <WeatherCard
+            cityTimezone={weather.city}
+            country={weather.country}
+            temperature={weather.temp}
+            conditionSummary={weather.condition}
+          />
+          <form>
+            <input value={query} onChange={e => setQuery(e.target.value)} />
+            <button onClick={e => handleSearch(e)}>Search</button>
+          </form>
+        </div>
+      )}
     </div>
   );
 };

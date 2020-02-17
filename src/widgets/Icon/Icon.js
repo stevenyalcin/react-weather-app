@@ -25,7 +25,7 @@ const Icon = ({ conditionSummary }) => {
     case 'Clouds':
       icon = CloudyDay;
       break;
-    case 'partly-cloudy-night':
+    case 'Partly Cloudy Night':
       icon = CloudyNight;
       break;
     case 'cloudy':
@@ -34,31 +34,31 @@ const Icon = ({ conditionSummary }) => {
     case 'Clear':
       icon = ClearDay;
       break;
-    case 'clear-night':
+    case 'Clear Night':
       icon = ClearNight;
       break;
-    case 'fog':
+    case 'Fog':
       icon = Fog;
       break;
     case 'tornado':
       icon = Tornado;
       break;
-    case 'snow':
+    case 'Snow':
       icon = Snow;
       break;
     case 'Rain':
       icon = Rain;
       break;
-    case 'sleet':
+    case 'Sleet':
       icon = Sleet;
       break;
-    case 'hail':
+    case 'Hail':
       icon = Hail;
       break;
-    case 'wind':
+    case 'Wind':
       icon = Wind;
       break;
-    case 'thunderstorm':
+    case 'Thunderstorm':
       icon = Thunderstorm;
       break;
     default:
