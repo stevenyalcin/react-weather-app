@@ -3,8 +3,8 @@ import WeatherCard from '../widgets/WeatherCard/WeatherCard';
 
 const WeatherEngine = ({ location }) => {
   // init for our state variable
-  const [error, setError] = useState(true);
   // const [showLoading, setShowLoading] = useState(false);
+  const [error, setError] = useState(true);
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({
     city: null,
@@ -52,17 +52,17 @@ const WeatherEngine = ({ location }) => {
   return (
     <div>
       {error && (
-        <div className="weatherCard">
+        <div>
           <WeatherCard
             cityTimezone={weather.city}
             country={weather.country}
             temperature={weather.temp}
             conditionSummary={weather.condition}
           />
-          <form>
+          {/* <form>
             <input value={query} onChange={e => setQuery(e.target.value)} />
             <button onClick={e => handleSearch(e)}>Search</button>
-          </form>
+          </form> */}
         </div>
       )}
     </div>
