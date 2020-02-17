@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const Location = ({ cityTimezone, conditionIcon }) => {
+const Location = ({ cityTimezone, country }) => {
   // set styled library for the components by wrapping them by using div
   const LocationName = styled.div`
     text-align: center;
@@ -16,7 +16,7 @@ const Location = ({ cityTimezone, conditionIcon }) => {
   return (
     <LocationName>
       <City>{cityTimezone}</City>
-      <Country>{conditionIcon}</Country>
+      <Country>{country}</Country>
     </LocationName>
   );
 };

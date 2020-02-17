@@ -14,15 +14,15 @@ import Snow from './icons/Snow-2x.png';
 import Thunderstorm from './icons/Thunderstorm-2x.png';
 import Tornado from './icons/Tornado-2x.png';
 
-const Icon = ({ conditionIcon }) => {
+const Icon = ({ conditionSummary }) => {
   const Image = styled.img`
     width: 30%;
   `;
 
   // set the switch statement according to the current condition icon
   var icon = '';
-  switch (conditionIcon) {
-    case 'partly-cloudy-day':
+  switch (conditionSummary) {
+    case 'Clouds':
       icon = CloudyDay;
       break;
     case 'partly-cloudy-night':
@@ -31,7 +31,7 @@ const Icon = ({ conditionIcon }) => {
     case 'cloudy':
       icon = Cloudy;
       break;
-    case 'clear-day':
+    case 'Clear':
       icon = ClearDay;
       break;
     case 'clear-night':
@@ -46,7 +46,7 @@ const Icon = ({ conditionIcon }) => {
     case 'snow':
       icon = Snow;
       break;
-    case 'rain':
+    case 'Rain':
       icon = Rain;
       break;
     case 'sleet':

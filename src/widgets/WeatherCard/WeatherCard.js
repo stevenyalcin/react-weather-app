@@ -6,7 +6,7 @@ import Condition from '../Condition/Condition';
 
 const WeatherCard = ({
   cityTimezone,
-  conditionIcon,
+  country,
   temperature,
   conditionSummary
 }) => {
@@ -46,8 +46,8 @@ const WeatherCard = ({
 
   return (
     <Card>
-      <Location cityTimezone={cityTimezone} />
-      <Icon conditionIcon={conditionIcon} />
+      <Location cityTimezone={cityTimezone} country={country} />
+      <Icon conditionSummary={conditionSummary} />
       <Condition
         temperature={temperature}
         conditionSummary={conditionSummary}
