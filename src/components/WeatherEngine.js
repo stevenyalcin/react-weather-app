@@ -35,6 +35,7 @@ const WeatherEngine = ({ location }) => {
     }
   };
 
+  // set handling method to set the city name that user typed into the textbox
   const handleSearch = e => {
     e.preventDefault();
     getWeatherData(query);
