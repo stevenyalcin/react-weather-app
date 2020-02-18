@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WeatherCard from '../widgets/WeatherCard/WeatherCard';
 
+// WeatherEngine component is the Main component of the weather cards functionality
 const WeatherEngine = ({ location }) => {
   // init for our state variable
   // const [showLoading, setShowLoading] = useState(false);
@@ -13,13 +14,15 @@ const WeatherEngine = ({ location }) => {
     condition: null
   });
 
-  // set fetching data for the function
-  const getWeatherData = async q => {
+  // set async fetching function for the selected `cityName`
+  const getWeatherData = async cityName => {
     try {
       const res = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&APPID=14257370885b8c8a7489f98046166a76`
+        // fetch the data related to the specify `cityName` from the Open Weather Api
+        `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=14257370885b8c8a7489f98046166a76`
       );
       const resJSON = await res.json();
+      // set the existing weather variables that we need to show in the UI
       setWeather({
         city: resJSON.name,
         country: resJSON.sys.country,
@@ -27,7 +30,8 @@ const WeatherEngine = ({ location }) => {
         condition: resJSON.weather[0].main
       });
     } catch (error) {
-      setError(error);
+      console.log(`Error is occured => ${error}`);
+      setError(error); // set an error message for the user
     }
   };
 
@@ -54,10 +58,10 @@ const WeatherEngine = ({ location }) => {
       {error && (
         <div>
           <WeatherCard
-            cityTimezone={weather.city}
-            country={weather.country}
-            temperature={weather.temp}
-            conditionSummary={weather.condition}
+            cityTimezone={weather.city} // set the city name on the card
+            country={weather.country} // set the country name on the card
+            temperature={weather.temp} // set the temperature name on the card
+            conditionSummary={weather.condition} // set the weather condition summary
           />
           {/* <form>
             <input value={query} onChange={e => setQuery(e.target.value)} />
