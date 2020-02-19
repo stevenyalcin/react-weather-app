@@ -36,9 +36,6 @@ const Icon = ({ conditionSummary }) => {
     case 'Dust':
       icon = Dust;
       break;
-    case 'Clear':
-      icon = ClearDay;
-      break;
     case 'Fog':
       icon = Fog;
       break;

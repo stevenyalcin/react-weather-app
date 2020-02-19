@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import WeatherCard from '../widgets/WeatherCard/WeatherCard';
 
 // WeatherEngine component is the Main component of the weather cards functionality
@@ -11,7 +11,8 @@ const WeatherEngine = ({ location }) => {
     city: null,
     country: null,
     temp: null,
-    condition: null
+    condition: null,
+    description: null
   });
 
   // set async fetching function for the selected `cityName`
@@ -27,7 +28,8 @@ const WeatherEngine = ({ location }) => {
         city: resJSON.name,
         country: resJSON.sys.country,
         temp: resJSON.main.temp,
-        condition: resJSON.weather[0].main
+        condition: resJSON.weather[0].main,
+        description: resJSON.weather[0].description
       });
     } catch (error) {
       console.log(`Error is occured => ${error}`);
@@ -54,16 +56,22 @@ const WeatherEngine = ({ location }) => {
   //useEffect will run only one time
   //if you pass a value to array, like this [data] than clearTimeout will run every time this value changes (useEffect re-run)
 
+  const onHover = () => {};
+
   return (
     <div>
       {error && (
         <div>
-          <WeatherCard
-            cityTimezone={weather.city} // set the city name on the card
-            country={weather.country} // set the country name on the card
-            temperature={weather.temp} // set the temperature name on the card
-            conditionSummary={weather.condition} // set the weather condition summary
-          />
+          <div className="weatherDetailMessage" onMouseOver={() => onHover()}>
+            <WeatherCard
+              cityTimezone={weather.city} // set the city name on the card
+              country={weather.country} // set the country name on the card
+              temperature={weather.temp} // set the temperature name on the card
+              conditionSummary={weather.condition} // set the weather condition summary
+            />
+            <span class="weatherDescription">{weather.description}</span>
+          </div>
+
           {/* <form>
             <input value={query} onChange={e => setQuery(e.target.value)} />
             <button onClick={e => handleSearch(e)}>Search</button>
