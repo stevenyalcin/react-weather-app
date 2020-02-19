@@ -16,6 +16,8 @@ import Snow from './icons/Snow-2x.png';
 import Thunderstorm from './icons/Thunderstorm-2x.png';
 import Tornado from './icons/Tornado-2x.png';
 import Drizzle from './icons/Drizzle-2x.png';
+import Dust from './icons/Dust-2x.png';
+import Smoke from './icons/Smoke-2x.png';
 
 const Icon = ({ conditionSummary }) => {
   const Image = styled.img`
@@ -36,6 +38,9 @@ const Icon = ({ conditionSummary }) => {
       break;
     case 'Drizzle':
       icon = Drizzle;
+      break;
+    case 'Dust':
+      icon = Dust;
       break;
     case 'Clear':
       icon = ClearDay;
@@ -60,6 +65,9 @@ const Icon = ({ conditionSummary }) => {
       break;
     case 'Sleet':
       icon = Sleet;
+      break;
+    case 'Smoke':
+      icon = Smoke;
       break;
     case 'Hail':
       icon = Hail;
