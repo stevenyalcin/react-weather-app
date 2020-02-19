@@ -3,6 +3,7 @@ import React from 'react';
 import Wind from './icons/Breezy-2x.png';
 import ClearNight from './icons/Clear Night-2x.png';
 import Fog from './icons/Fog-2x.png';
+import Mist from './icons/Fog-2x.png';
 import Hail from './icons/Hail-2x.png';
 import CloudyDay from './icons/Mostly Cloudy-2x.png';
 import Sunny from './icons/Mostly Sunny-2x.png';
@@ -44,6 +45,9 @@ const Icon = ({ conditionSummary }) => {
       break;
     case 'Fog':
       icon = Fog;
+      break;
+    case 'Mist':
+      icon = Mist;
       break;
     case 'Tornado':
       icon = Tornado;
