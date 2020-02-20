@@ -20,7 +20,7 @@ const WeatherEngine = ({ location }) => {
     try {
       const res = await fetch(
         // fetch the data related to the specify `cityName` from the Open Weather Api
-        `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=14257370885b8c8a7489f98046166a76`
+        `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=2635e55d35c7d5a9ef09c95b59f94989`
       );
       const resJSON = await res.json();
       // set the existing weather variables that we need to show in the UI

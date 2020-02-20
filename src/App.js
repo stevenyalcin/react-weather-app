@@ -1,6 +1,7 @@
-import React from 'react';
-import './App.css';
 import styled from '@emotion/styled';
+import React from 'react';
+import Clock from 'react-live-clock';
+import './App.css';
 import WeatherEngine from './components/WeatherEngine';
 
 function App() {
@@ -12,10 +13,7 @@ function App() {
     justify-content: space-around;
   `;
 
-  let newDate = new Date().toUTCString();
-  // let date = newDate.getDate();
-  // let month = newDate.getMonth() + 1;
-  // let year = newDate.getFullYear();
+  let todayDate = new Date().toDateString();
 
   return (
     <div className="App">
@@ -33,7 +31,7 @@ function App() {
         <a href="#">Link</a>
         <a href="#">Link</a>
         <a href="#" className="right">
-          {newDate}
+          {todayDate} | <Clock format={'HH:mm:ss'} ticking={true} />
         </a>
       </div>
 
