@@ -37,24 +37,28 @@ function App() {
 
       <div className="row">
         <div className="side">
-          <h2>About Me</h2>
-          <h5>Photo of me:</h5>
-          <div className="fakeimg" style={{ height: '200' }}>
-            Image
-          </div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-          <h3>More Text</h3>
-          <p>Lorem ipsum dolor sit ame.</p>
-          <div className="fakeimg" style={{ height: '60' }}>
-            Image
-          </div>
+          <h2>About website</h2>
+          <p>This website is designed and programmed in React js</p>
+          <h3>Content</h3>
+          <p>
+            When you go over the website, you will be seen that different type
+            of react libraries, and features is implemeted as a personal
+            project.
+          </p>
+          <h3>Current features</h3>
+          <ul>
+            <li>Http Service</li>
+            <li>Rss Service</li>
+            <li>Twitter Api</li>
+            <li>Weather Api</li>
+            <li>News Api</li>
+          </ul>
         </div>
         <div className="main">
           <h2>Weather Broadcast</h2>
           <span className="weatherInfoMessage">
-            When you move the mouse over the <b>Weather Card</b>, you should be
-            able to see more detaied information regarding to the weather
-            condition of hovered city card.
+            Please move mouse over the <b>Weather Card</b> to see more detailed
+            weather condition of the city.
           </span>
           <div className="weatherBroadcast">
                
@@ -87,7 +91,7 @@ function App() {
       </div>
 
       <div className="footer">
-        <h2>© Copyrights WeatherApp v1.0 Halifax NS 2020</h2>
+        <h2>© Copyrights SYALCIN Halifax NS 2020</h2>
       </div>
     </div>
   );

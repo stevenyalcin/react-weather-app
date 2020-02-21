@@ -69,7 +69,7 @@ const WeatherEngine = ({ location }) => {
               temperature={weather.temp} // set the temperature name on the card
               conditionSummary={weather.condition} // set the weather condition summary
             />
-            <span class="weatherDescription">{weather.description}</span>
+            <span className="weatherDescription">{weather.description}</span>
           </div>
 
           {/* <form>
