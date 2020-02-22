@@ -18,18 +18,18 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <h1>My Website</h1>
-        <p>
-          A <b>responsive</b> website created by me.
-        </p>
+        <h1>Maritime</h1>
+        <p>Welcome to my paradise</p>
       </div>
 
       <div className="navbar">
         <a href="#" className="active">
           Home
         </a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <a href="#">Rss Feed</a>
+        <a href="#">Weather Map</a>
+        <a href="#">Agriculture</a>
+        <a href="#">World Weather Broadcast</a>
         <a href="#" className="right">
           {todayDate} | <Clock format={'HH:mm:ss'} ticking={true} />
         </a>
@@ -45,14 +45,6 @@ function App() {
             of react libraries, and features is implemeted as a personal
             project.
           </p>
-          <h3>Current features</h3>
-          <ul>
-            <li>Http Service</li>
-            <li>Rss Service</li>
-            <li>Twitter Api</li>
-            <li>Weather Api</li>
-            <li>News Api</li>
-          </ul>
         </div>
         <div className="main">
           <h2>Weather Broadcast</h2>
