@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import WeatherCard from '../widgets/WeatherCard/WeatherCard';
+import WeatherCard from '../../widgets/WeatherCard/WeatherCard';
 
 // WeatherEngine component is the Main component of the weather cards functionality
 const WeatherEngine = ({ location }) => {
