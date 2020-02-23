@@ -18,7 +18,7 @@ const News = () => {
       <ul>
         {data.articles.map((news, index) => (
           <li key={index} style={{ listStyle: 'none' }}>
-            <h5>{news.publishedAt}</h5>
+            <h5>⏰ {news.publishedAt}</h5>
             <div className="container">
               <img
                 src={news.urlToImage}
@@ -26,10 +26,13 @@ const News = () => {
                 width="100"
                 height="100"
               />
-              <a href={news.url}>
-                <h3>{news.title}</h3>
-              </a>
-              <p>{news.description}</p>
+              <div className="newsDetails">
+                <a href={news.url}>
+                  <h3>{news.title} 👈🏻</h3>
+                </a>
+
+                <p>{news.description}✍🏻</p>
+              </div>
             </div>
           </li>
         ))}
