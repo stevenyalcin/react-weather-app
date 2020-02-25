@@ -36,6 +36,7 @@ const News = () => {
                 <p>{news.description} ✍🏻</p>
               </div>
             </div>
+            <hr />
           </li>
         ))}
       </ul>
