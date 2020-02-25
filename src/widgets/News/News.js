@@ -32,7 +32,7 @@ const News = () => {
               />
 
               <div class="container__text">
-                <a href={news.url}>
+                <a href={news.url} target="target_blank">
                   <h3>{news.title} 👈🏻</h3>
                 </a>
                 <p>{news.description} ✍🏻</p>
