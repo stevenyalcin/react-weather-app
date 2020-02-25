@@ -41,7 +41,7 @@ const WeatherCard = ({
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 10%;
   `;
 
   return (
