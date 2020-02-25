@@ -17,7 +17,7 @@ const News = () => {
   }, []);
   return (
     <div className="newsCards">
-      <h2>Recent News</h2>
+      <h2>Today's News</h2>
       <ul>
         {data.articles.map((news, index) => (
           <li key={index} style={{ listStyle: 'none' }}>
@@ -38,7 +38,6 @@ const News = () => {
                 <p>{news.description} ✍🏻</p>
               </div>
             </div>
-            <hr />
           </li>
         ))}
       </ul>

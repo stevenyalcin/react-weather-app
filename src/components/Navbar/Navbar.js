@@ -11,7 +11,8 @@ const Navbar = () => {
       <a href="#">Rss Feed</a>
       <a href="#">Weather Map</a>
       <a href="#">Agriculture</a>
-      <a href="#">World Weather Broadcast</a>
+      <a href="#">Web Tutorials</a>
+      <a href="#">Robotics</a>
       <a href="#" className="right">
         {todayDate} | <Clock format={'HH:mm:ss'} ticking={true} />
       </a>
