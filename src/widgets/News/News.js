@@ -22,7 +22,7 @@ const News = () => {
         {data.articles.map((news, index) => (
           <li key={index} style={{ listStyle: 'none' }}>
             <div className="container">
-              <h5>⏰ {new Date(news.publishedAt).toDateString()}</h5>
+              <h5>🗓 {new Date(news.publishedAt).toDateString()}</h5>
               <img
                 className="container__image"
                 src={news.urlToImage}
