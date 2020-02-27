@@ -92,8 +92,15 @@ body {
 }
 
 /* Right-aligned link */
-.navbar a.right {
+.navbar p.right {
   float: right;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
 }
 
 /* Change color on hover */
