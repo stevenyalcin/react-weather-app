@@ -3,12 +3,12 @@ import React from 'react';
 const Sidebar = () => {
   return (
     <div className="side">
-      <h2>About website</h2>
-      <p>This website is designed and programmed in Reactjs</p>
-      <h3>Content</h3>
+      <h2>What is React?</h2>
       <p>
-        When you go over the website, you will be seen different type of react
-        libraries, and features is implemeted as a personal project.
+        React is a JavaScript library for building user interfaces. It is
+        maintained by Facebook and a community of individual developers and
+        companies. React can be used as a base in the development of single-page
+        or mobile applications.
       </p>
     </div>
   );
