@@ -16,7 +16,6 @@ function App() {
         <Sidebar />
         <div className="main">
           <WeatherView />
-          <hr />
           <News />
         </div>
       </div>

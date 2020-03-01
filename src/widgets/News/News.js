@@ -14,7 +14,7 @@ const News = () => {
       setData(result.data);
     };
     fetchData();
-  }, []);
+  }, [todayDate]);
   return (
     <div className="newsCards">
       <h2>Today's News</h2>
@@ -22,7 +22,12 @@ const News = () => {
         {data.articles.map((news, index) => (
           <li key={index} style={{ listStyle: 'none' }}>
             <div className="container">
-              <h5>🗓 {new Date(news.publishedAt).toDateString()}</h5>
+              <h5>
+                <span role="img" aria-label="calendar">
+                  🗓
+                </span>
+                {new Date(news.publishedAt).toDateString()}
+              </h5>
               <img
                 className="container__image"
                 src={news.urlToImage}
@@ -31,11 +36,16 @@ const News = () => {
                 height="150"
               />
 
-              <div class="container__text">
+              <div className="container__text">
                 <a href={news.url} target="target_blank">
-                  <h3>{news.title} 👈🏻</h3>
+                  <h3>{news.title}</h3>
                 </a>
-                <p>{news.description} ✍🏻</p>
+                <p>
+                  {news.description}
+                  <span role="img" aria-label="hand">
+                    ✍🏻
+                  </span>
+                </p>
               </div>
             </div>
           </li>

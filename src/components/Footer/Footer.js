@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 const Footer = props => {
   return (
@@ -7,7 +7,5 @@ const Footer = props => {
     </div>
   );
 };
-
-Footer.propTypes = {};
 
 export default Footer;
