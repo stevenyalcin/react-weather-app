@@ -4,8 +4,8 @@ import WeatherEngine from '../WeatherEngine/WeatherEngine';
 
 const WeatherView = props => {
   const Engine = styled.div`
-    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     color: white;
     flex-direction: row;
     justify-content: space-around;
@@ -24,11 +24,8 @@ const WeatherView = props => {
         <Engine>
                  
           <WeatherEngine location="kiev, ua" />
-                  
           <WeatherEngine location="halifax, ca" />
-                  
           <WeatherEngine location="london, gb" />
-                  
           <WeatherEngine location="manisa, tr" />
                 
         </Engine>

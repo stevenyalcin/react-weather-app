@@ -56,13 +56,11 @@ const WeatherEngine = ({ location }) => {
   //useEffect will run only one time
   //if you pass a value to array, like this [data] than clearTimeout will run every time this value changes (useEffect re-run)
 
-  const onHover = () => {};
-
   return (
     <div>
       {error && (
         <div>
-          <div className="weatherDetailMessage" onMouseOver={() => onHover()}>
+          <div className="weatherDetailMessage">
             <WeatherCard
               cityTimezone={weather.city} // set the city name on the card
               country={weather.country} // set the country name on the card

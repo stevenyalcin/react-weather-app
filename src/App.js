@@ -13,10 +13,10 @@ function App() {
       <Header />
       {/* <Navbar /> */}
       <div className="row">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <div className="main">
           <WeatherView />
-          <News />
+          {/* <News /> */}
         </div>
       </div>
       <Footer />
