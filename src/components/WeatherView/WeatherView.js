@@ -3,14 +3,6 @@ import React from 'react';
 import WeatherEngine from '../WeatherEngine/WeatherEngine';
 
 const WeatherView = props => {
-  const Engine = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    flex-direction: row;
-    justify-content: space-around;
-  `;
-
   return (
     <div>
       <div style={{ marginBottom: '2em' }}>
@@ -20,15 +12,21 @@ const WeatherView = props => {
           weather condition of the city.
         </span>
       </div>
-      <div>
-        <Engine>
-                 
-          <WeatherEngine location="kiev, ua" />
-          <WeatherEngine location="halifax, ca" />
-          <WeatherEngine location="london, gb" />
-          <WeatherEngine location="manisa, tr" />
-                
-        </Engine>
+      <div class="flex-container">
+        <WeatherEngine location="kiev, ua" />
+        <WeatherEngine location="halifax, ca" />
+        <WeatherEngine location="london, gb" />
+        <WeatherEngine location="manisa, tr" />
+        <WeatherEngine location="toronto, ca" />
+        <WeatherEngine location="Ottawa, ca" />
+        <WeatherEngine location="new york, us" />
+        <WeatherEngine location="seattle, us" />
+        <WeatherEngine location="seattle, us" />
+        <WeatherEngine location="seattle, us" />
+        <WeatherEngine location="seattle, us" />
+        <WeatherEngine location="seattle, us" />
+        <WeatherEngine location="seattle, us" />
+        <WeatherEngine location="seattle, us" />
       </div>
     </div>
   );

@@ -172,24 +172,32 @@ ul {
 
 /* styling for hovering over the weather card and show more detail weather condition*/
 
-.weatherDetailMessage .weatherDescription {
-  visibility: visible;
+.weatherCardView .weatherDesc {
+  visibility: hidden;
   width: 15em;
   height: 2em;
-  background-color: black;
   text-align: center;
-  padding: 10px;
+  padding: 0;
   position: absolute;
   z-index: 1;
-  margin-left: 0px;
-  margin-top: -82px;
+  margin-left: 2px;
+  margin-top: 16.5em;
+  text-transform: capitalize;
 
-  /* Fade in weatherDetailMessage - takes 1 second to go from 0% to 100% opac: */
+  /* Fade in weatherCardView - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 
-.weatherDetailMessage:hover .weatherDescription {
+.weatherCardView:hover .weatherDesc {
   visibility: visible;
   opacity: 1;
+}
+
+.flex-container {
+  margin: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  /* background-color: DodgerBlue; */
 }

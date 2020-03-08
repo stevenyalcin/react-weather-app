@@ -3,12 +3,14 @@ import styled from '@emotion/styled';
 import Location from '../Location/Location';
 import Icon from '../Icon/Icon';
 import Condition from '../Condition/Condition';
+import WeatherDescription from '../WeatherDesc/WeatherDescription';
 
 const WeatherCard = ({
   cityTimezone,
   country,
   temperature,
-  conditionSummary
+  conditionSummary,
+  weatherDescription
 }) => {
   // set mutable variables for the up and down color for the temperature
   let highColor = 0;
@@ -33,26 +35,31 @@ const WeatherCard = ({
   // set hoc styled library for the card component that includes all inner components
   const Card = styled.div`
     font-family: 'Merriweather', sans-serif;
-    margin: 0 auto;
+    margin: 1.5em;
     background: ${bg};
-    width: 15em;
-    height: 20em;
+    width: 16em;
+    height: 22em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-radius: 10%;
   `;
 
   return (
-    <Card>
-      <Location cityTimezone={cityTimezone} country={country} />
-      <Icon conditionSummary={conditionSummary} />
-      <Condition
-        temperature={temperature}
-        conditionSummary={conditionSummary}
-      />
-    </Card>
+    <div className="weatherCardView">
+      <Card>
+        <Location cityTimezone={cityTimezone} country={country} />
+        <Icon conditionSummary={conditionSummary} />
+        <Condition
+          temperature={temperature}
+          conditionSummary={conditionSummary}
+        />
+        <div className="weatherDesc">
+          <WeatherDescription weatherDescription={weatherDescription} />
+        </div>
+      </Card>
+    </div>
   );
 };
 

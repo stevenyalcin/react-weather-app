@@ -6,7 +6,7 @@ const WeatherEngine = ({ location }) => {
   // init for our state variable
   // const [showLoading, setShowLoading] = useState(false);
   const [error, setError] = useState(true);
-  // const [query, setQuery] = useState('');
+  const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({
     city: null,
     country: null,
@@ -38,10 +38,10 @@ const WeatherEngine = ({ location }) => {
   };
 
   // set handling method to set the city name that user typed into the textbox
-  // const handleSearch = e => {
-  //   e.preventDefault();
-  //   getWeatherData(query);
-  // };
+  const handleSearch = e => {
+    e.preventDefault();
+    getWeatherData(query);
+  };
 
   useEffect(() => {
     getWeatherData(location);
@@ -66,8 +66,8 @@ const WeatherEngine = ({ location }) => {
               country={weather.country} // set the country name on the card
               temperature={weather.temp} // set the temperature name on the card
               conditionSummary={weather.condition} // set the weather condition summary
+              weatherDescription={weather.description}
             />
-            <span className="weatherDescription">{weather.description}</span>
           </div>
 
           {/* <form>
