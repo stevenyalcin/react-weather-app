@@ -201,3 +201,7 @@ ul {
   color: white;
   /* background-color: DodgerBlue; */
 }
+
+.weatherDetailMessage {
+  text-align: center;
+}

@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import React from 'react';
 import WeatherEngine from '../WeatherEngine/WeatherEngine';
 
@@ -12,21 +11,13 @@ const WeatherView = props => {
           weather condition of the city.
         </span>
       </div>
-      <div class="flex-container">
-        <WeatherEngine location="kiev, ua" />
-        <WeatherEngine location="halifax, ca" />
-        <WeatherEngine location="london, gb" />
-        <WeatherEngine location="manisa, tr" />
-        <WeatherEngine location="toronto, ca" />
-        <WeatherEngine location="Ottawa, ca" />
-        <WeatherEngine location="new york, us" />
-        <WeatherEngine location="seattle, us" />
-        <WeatherEngine location="seattle, us" />
-        <WeatherEngine location="seattle, us" />
-        <WeatherEngine location="seattle, us" />
-        <WeatherEngine location="seattle, us" />
-        <WeatherEngine location="seattle, us" />
-        <WeatherEngine location="seattle, us" />
+      <div className="flex-container">
+        <WeatherEngine location="kiev" />
+        <WeatherEngine location="halifax" />
+        <WeatherEngine location="london" />
+        <WeatherEngine location="manisa" />
+        <WeatherEngine location="toronto" />
+        <WeatherEngine location="seattle" />
       </div>
     </div>
   );

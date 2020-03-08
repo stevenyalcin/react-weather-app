@@ -39,6 +39,9 @@ const WeatherEngine = ({ location }) => {
 
   // set handling method to set the city name that user typed into the textbox
   const handleSearch = e => {
+    // if (e.key === '13') {
+
+    // }
     e.preventDefault();
     getWeatherData(query);
   };
@@ -51,7 +54,9 @@ const WeatherEngine = ({ location }) => {
     // }, 1000);
 
     // this will clear Timeout when component unmont like in willComponentUnmount
-    // return () => window.clearTimeout(loadingApiTimer);
+    // return () => window.addEventListener('keyPress', handleSearch());
+
+    // window.clearTimeout(loadingApiTimer);
   }, [location]);
   //useEffect will run only one time
   //if you pass a value to array, like this [data] than clearTimeout will run every time this value changes (useEffect re-run)
@@ -59,21 +64,24 @@ const WeatherEngine = ({ location }) => {
   return (
     <div>
       {error && (
-        <div>
-          <div className="weatherDetailMessage">
-            <WeatherCard
-              cityTimezone={weather.city} // set the city name on the card
-              country={weather.country} // set the country name on the card
-              temperature={weather.temp} // set the temperature name on the card
-              conditionSummary={weather.condition} // set the weather condition summary
-              weatherDescription={weather.description}
+        <div className="weatherDetailMessage">
+          <WeatherCard
+            cityTimezone={weather.city} // set the city name on the card
+            country={weather.country} // set the country name on the card
+            temperature={weather.temp} // set the temperature name on the card
+            conditionSummary={weather.condition} // set the weather condition summary
+            weatherDescription={weather.description}
+          />
+          <form>
+            <input
+              className="city-textbox"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              onKeyPress={e => handleSearch(e)}
+              // tabIndex="0"
             />
-          </div>
-
-          {/* <form>
-            <input value={query} onChange={e => setQuery(e.target.value)} />
-            <button onClick={e => handleSearch(e)}>Search</button>
-          </form> */}
+            {/* <button onClick={e => handleSearch(e)}>Search</button> */}
+          </form>
         </div>
       )}
     </div>
