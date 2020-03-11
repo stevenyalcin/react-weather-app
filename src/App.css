@@ -195,7 +195,7 @@ ul {
 }
 
 .flex-container {
-  margin: 1%;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   color: white;

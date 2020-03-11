@@ -12,12 +12,14 @@ const WeatherView = props => {
         </span>
       </div>
       <div className="flex-container">
-        <WeatherEngine location="kiev" />
+        <WeatherEngine location="moscow" />
         <WeatherEngine location="halifax" />
         <WeatherEngine location="london" />
         <WeatherEngine location="manisa" />
         <WeatherEngine location="toronto" />
-        <WeatherEngine location="seattle" />
+        <WeatherEngine location="vancouver" />
+        <WeatherEngine location="cuba" />
+        <WeatherEngine location="tbilisi" />
       </div>
     </div>
   );
