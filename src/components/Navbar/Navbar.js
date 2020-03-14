@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div class="scroll-right">
+      <div className="scroll-right">
         <h2>
           {todayDate} | <Clock format={'HH:mm:ss'} ticking={true} />
         </h2>
