@@ -8,7 +8,11 @@ const Condition = ({ temperature, conditionSummary }) => {
   `;
 
   const State = styled.h3`
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000; */
+    text-shadow: black 1px 1px 1px;
+    -webkit-font-smoothing: antialiased;
   `;
 
   return (

@@ -105,11 +105,11 @@ ul {
 
 /* Main column */
 .main {
-  -ms-flex: 70%; /* IE10 */
+  /* -ms-flex: 70%; IE10 */
   flex: 100%;
-  padding: 1em;
+  padding: 1.7em;
   background-image: url('https://i.pinimg.com/originals/ce/80/2f/ce802f1b341a2278514eaaf088d22b38.jpg');
-  background-position: center;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -170,11 +170,10 @@ ul {
 }
 
 .flex-container {
-  margin: 2%;
+  margin: 1%;
   display: flex;
   flex-wrap: wrap;
   color: white;
-  /* background-color: DodgerBlue; */
 }
 
 .weatherDetailMessage {
