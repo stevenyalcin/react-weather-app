@@ -39,9 +39,6 @@ const WeatherEngine = ({ location }) => {
 
   // set handling method to set the city name that user typed into the textbox
   const handleSearch = e => {
-    // if (e.key === '13') {
-
-    // }
     e.preventDefault();
     getWeatherData(query);
   };
@@ -74,13 +71,17 @@ const WeatherEngine = ({ location }) => {
           />
           <form>
             <input
-              className="city-textbox"
+              className="city-search-textfield"
               value={query}
               onChange={e => setQuery(e.target.value)}
-              onKeyPress={e => handleSearch(e)}
-              // tabIndex="0"
+              // onKeyPress={e => handleSearch(e)}
             />
-            {/* <button onClick={e => handleSearch(e)}>Search</button> */}
+            <button
+              className="city-search-button"
+              onClick={e => handleSearch(e)}
+            >
+              Search
+            </button>
           </form>
         </div>
       )}
