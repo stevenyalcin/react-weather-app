@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import WeatherView from './components/WeatherView/WeatherView';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Navbar /> */}
+      {/* <Header /> */}
+      <Navbar />
       <div className="row">
         {/* <Sidebar /> */}
         <div className="main">
@@ -16,7 +15,7 @@ function App() {
           {/* <News /> */}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

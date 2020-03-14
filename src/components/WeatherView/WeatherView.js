@@ -4,13 +4,9 @@ import WeatherEngine from '../WeatherEngine/WeatherEngine';
 const WeatherView = props => {
   return (
     <div>
-      <div style={{ marginBottom: '2em' }}>
-        <h2>Weather Broadcast</h2>
-        <span className="weatherInfoMessage">
-          Please move mouse over the <b>Weather Card</b> to see more detailed
-          weather condition of the city.
-        </span>
-      </div>
+      {/* <div className="weatherInfoMessage">
+        Hover the <b>Weather Card</b> to see more detailed weather condition
+      </div> */}
       <div className="flex-container">
         <WeatherEngine location="moscow" />
         <WeatherEngine location="halifax" />
