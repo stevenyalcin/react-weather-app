@@ -18,14 +18,14 @@ const WeatherCard = ({
   let bg = null;
 
   // set the calculation based on the current temperature that we are receiving for particular location
-  if (temperature > 12) {
-    highColor = (1 - (temperature - 12) / 28) * 255;
+  if (temperature >= 1) {
+    highColor = (1 - (temperature - 5) / 28) * 255;
     lowColor = highColor - 150;
     bg = `linear-gradient(to top,
     rgb(255, ${highColor}, 0),
     rgb(255, ${lowColor}, 0))`;
-  } else if (temperature <= 12) {
-    highColor = (1 - (temperature + 20) / 32) * 255;
+  } else if (temperature <= 10) {
+    highColor = (1 - (temperature + 1) / 32) * 255;
     lowColor = highColor - 150;
     bg = `linear-gradient(to top,
       rgb(0, ${highColor}, 255),
