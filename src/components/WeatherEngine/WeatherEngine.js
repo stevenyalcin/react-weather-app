@@ -70,19 +70,22 @@ const WeatherEngine = ({ location }) => {
             weatherDescription={weather.description}
           />
           <form>
-            <input
-              className="city-search-textfield"
-              value={query}
-              placeholder="Type city name.."
-              onChange={e => setQuery(e.target.value)}
-              // onKeyPress={e => handleSearch(e)}
-            />
-            <button
-              className="city-search-button"
-              onClick={e => handleSearch(e)}
-            >
-              Search
-            </button>
+            <div class="search">
+              <input
+                type="text"
+                className="city-search-textfield"
+                value={query}
+                placeholder="Type city name.."
+                onChange={e => setQuery(e.target.value)}
+                // onKeyPress={e => handleSearch(e)}
+              />
+              <button
+                className="city-search-button"
+                onClick={e => handleSearch(e)}
+              >
+                Search
+              </button>
+            </div>
           </form>
         </div>
       )}

@@ -36,6 +36,7 @@ const WeatherCard = ({
   const Card = styled.div`
     font-family: 'Merriweather', sans-serif;
     margin: 1.5em;
+    margin-bottom: 1em;
     background: ${bg};
     width: 16em;
     height: 22em;
