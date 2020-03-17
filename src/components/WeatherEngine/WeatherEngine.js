@@ -73,6 +73,7 @@ const WeatherEngine = ({ location }) => {
             <input
               className="city-search-textfield"
               value={query}
+              placeholder="Type city name.."
               onChange={e => setQuery(e.target.value)}
               // onKeyPress={e => handleSearch(e)}
             />

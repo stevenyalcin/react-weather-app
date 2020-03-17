@@ -13,7 +13,7 @@ const WeatherView = props => {
         <WeatherEngine location="Sydney" />
         <WeatherEngine location="london" />
         <WeatherEngine location="Tallinn" />
-        <WeatherEngine location="manisa" />
+        <WeatherEngine location="mexico" />
         <WeatherEngine location="toronto" />
         <WeatherEngine location="vancouver" />
         <WeatherEngine location="cuba" />
