@@ -17,7 +17,7 @@ const WeatherCard = ({
   let lowColor = 0;
   let bg = null;
 
-  // set the calculation based on the current temperature that we are receiving for particular location
+  // set the calculation based on the current temperature that we receive for particular location
   if (temperature >= 1) {
     highColor = (1 - (temperature - 5) / 28) * 255;
     lowColor = highColor - 150;
