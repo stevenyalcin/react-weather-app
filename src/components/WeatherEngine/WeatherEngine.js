@@ -43,6 +43,8 @@ const WeatherEngine = ({ location }) => {
     getWeatherData(query);
   };
 
+  //useEffect will run only one time
+  //if you pass a value to array, like this [data] than clearTimeout will run every time this value changes (useEffect re-run)
   useEffect(() => {
     getWeatherData(location);
     // let loadingApiTimer = setTimeout(() => {
@@ -55,8 +57,6 @@ const WeatherEngine = ({ location }) => {
 
     // window.clearTimeout(loadingApiTimer);
   }, [location]);
-  //useEffect will run only one time
-  //if you pass a value to array, like this [data] than clearTimeout will run every time this value changes (useEffect re-run)
 
   return (
     <div>
